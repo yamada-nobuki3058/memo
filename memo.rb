@@ -25,7 +25,7 @@ elsif memo_type == "2"
   imput_memo = STDIN.read
   memo = imput_memo.chomp
   
-  CSV.open("#{file_name}.csv" , "w") do |csv|
+  CSV.open("#{file_name}.csv" , "a") do |csv|
     csv.puts ["#{memo}"]
   end
   
